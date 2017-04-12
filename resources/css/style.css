@@ -1,0 +1,289 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-family: Helvetica;
+/**  display: flex;
+  flex-direction: column;
+  align-items: center; **/
+}
+
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  display: flex;
+  align-items: center;
+}
+
+main .container {
+  align-items: flex-start;
+}
+
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.34rem;
+}
+
+header h1 {
+  padding: 0.66rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+main {
+  background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.notice {
+  background-color: black;
+  width: 25rem;
+  margin-top: 9rem;
+}
+
+.notice h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.notice h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+nav {
+  background-color: firebrick;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav .container, .middle .container, {
+  justify-content: center;
+}
+
+
+.gadgets {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.gadgets .container {
+  justify-content: space-between;
+}
+
+.gadgets h4 {
+  background-color: black;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.gadgets img {
+  margin: 2rem;
+  height: 9rem;
+}
+
+.gadgets #glasses {
+  height: 15rem;
+}
+
+.gadgets #glasses img {
+  margin: 2rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.25rem;
+  width: 90%;
+  height: auto;
+}
+
+.item {
+  border: 4px black solid;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.misc {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.misc .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  width: 35%;
+}
+
+.hours {
+  width: 35%;
+}
+
+.misc h4 {
+  background-color: black;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.misc h5 {
+  color: black;
+  line-height: 150%;
+}
+
+footer {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer .container {
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+
+  }
+
+  nav li {
+    display: none;
+  }
+  nav .hidden {
+    display: block;
+  }
+  nav ul {
+    justify-content: center;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .item {
+    width: 47%;
+  }
+
+  .location {
+    width: 35%;
+  }
+
+  .hours {
+    width: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  header .container {
+    justify-content: center;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header img {
+    margin-top: 0.66rem;
+    margin-bottom: 0.66rem;
+  }
+
+  main {
+    height: 15rem;
+  }
+
+  .notice {
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .notice h3 {
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .notice h2 {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .gadgets .container {
+    justify-content: center;
+  }
+
+  .misc .container {
+    flex-direction: column;
+
+  }
+
+  .location {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  .hours {
+    width: 90%;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+
+}
